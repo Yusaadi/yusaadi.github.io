@@ -169,6 +169,17 @@
       .section { margin-top: 70px; }
       .intro { font-size: 16px; }
     }
+    .animation-project {
+    margin-bottom: 50px;
+}
+
+.animation-project video {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    border-radius: 12px;
+    background: #000;
+}
   </style>
 </head>
 
@@ -182,7 +193,20 @@
         onclick="setLanguage('en')">EN</button>
     </div>
   </header>
+</header>
 
+<main>
+
+    <!-- VIDEO PORTFOLIO -->
+    <section class="animation-project">
+        <video controls preload="metadata" width="100%">
+            <source src="./kepala muter.mp4" type="video/mp4">
+            Browser kamu tidak mendukung pemutaran video.
+        </video>
+        <p>2D Animation | Frame by Frame</p>
+    </section>
+
+    <section>
   <main>
     <section>
       <p class="eyebrow" data-id="PORTOFOLIO ANIMATOR & ILUSTRATOR"
@@ -288,15 +312,5 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <section class="animation-project">
-    <h2>My Animation</h2>
-
-    <video controls preload="metadata" width="100%">
-        <source src="./kepala muter.mp4" type="video/mp4">
-        Browser kamu tidak mendukung pemutaran video.
-    </video>
-
-    <p>2D Animation | Frame by Frame</p>
-</section>
 </body>
 </html>
